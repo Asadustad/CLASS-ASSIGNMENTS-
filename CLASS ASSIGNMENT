@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Status Demo</title>
+</head>
+<body>
+  <h2>Order Status Check</h2>
+
+  <label for="orderId">Order ID daalein:</label>
+  <input type="text" id="orderId" />
+  <button onclick="checkOrder()">Check Status</button>
+
+  <p id="result">Yahan status dikhega...</p>
+
+  <script>
+    function orderKiMaloomat(orderId) {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          if (orderId) {
+            resolve({
+              orderId: orderId,
+              status: "Shipped",
+              items: ["Shirt", "Shoes"]
+            });
+          } else {
+            reject("Order ID nahi mili");
+          }
+        }, 2000);
+      });
+    }
+
+    function checkOrder() {
+      const orderId = document.getElementById("orderId").value;
+      const result = document.getElementById("result");
+      result.textContent = "Intezaar karein...";
+
+      orderKiMaloomat(orderId)
+        .then(data => {
+          result.innerHTML = `
+            ✅ Order ID: <b>${data.orderId}</b><br>
+            📦 Status: <b>${data.status}</b><br>
+            📋 Items: ${data.items.join(", ")}
+          `;
+        })
+        .catch(error => {
+          result.textContent = "❌ Error: " + error;
+        });
+    }
+  </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Status Demo</title>
+</head>
+<body>
+  <h2>Order Status Check</h2>
+
+  <label for="orderId">Order ID daalein:</label>
+  <input type="text" id="orderId" />
+  <button onclick="checkOrder()">Check Status</button>
+
+  <p id="result">Yahan status dikhega...</p>
+
+  <script>
+    function orderKiMaloomat(orderId) {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          if (orderId) {
+            resolve({
+              orderId: orderId,
+              status: "Shipped",
+              items: ["Shirt", "Shoes"]
+            });
+          } else {
+            reject("Order ID nahi mili");
+          }
+        }, 2000);
+      });
+    }
+
+    function checkOrder() {
+      const orderId = document.getElementById("orderId").value;
+      const result = document.getElementById("result");
+      result.textContent = "Intezaar karein...";
+
+      orderKiMaloomat(orderId)
+        .then(data => {
+          result.innerHTML = `
+            ✅ Order ID: <b>${data.orderId}</b><br>
+            📦 Status: <b>${data.status}</b><br>
+            📋 Items: ${data.items.join(", ")}
+          `;
+        })
+        .catch(error => {
+          result.textContent = "❌ Error: " + error;
+        });
+    }
+  </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Status Demo</title>
+</head>
+<body>
+  <h2>Order Status Check</h2>
+
+  <label for="orderId">Order ID daalein:</label>
+  <input type="text" id="orderId" />
+  <button onclick="checkOrder()">Check Status</button>
+
+  <p id="result">Yahan status dikhega...</p>
+
+  <script>
+    function orderKiMaloomat(orderId) {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          if (orderId) {
+            resolve({
+              orderId: orderId,
+              status: "Shipped",
+              items: ["Shirt", "Shoes"]
+            });
+          } else {
+            reject("Order ID nahi mili");
+          }
+        }, 2000);
+      });
+    }
+
+    function checkOrder() {
+      const orderId = document.getElementById("orderId").value;
+      const result = document.getElementById("result");
+      result.textContent = "Intezaar karein...";
+
+      orderKiMaloomat(orderId)
+        .then(data => {
+          result.innerHTML = `
+            ✅ Order ID: <b>${data.orderId}</b><br>
+            📦 Status: <b>${data.status}</b><br>
+            📋 Items: ${data.items.join(", ")}
+          `;
+        })
+        .catch(error => {
+          result.textContent = "❌ Error: " + error;
+        });
+    }
+  </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Status Demo</title>
+</head>
+<body>
+  <h2>Order Status Check</h2>
+
+  <label for="orderId">Order ID daalein:</label>
+  <input type="text" id="orderId" />
+  <button onclick="checkOrder()">Check Status</button>
+
+  <p id="result">Yahan status dikhega...</p>
+
+  <script>
+    function orderKiMaloomat(orderId) {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          if (orderId) {
+            resolve({
+              orderId: orderId,
+              status: "Shipped",
+              items: ["Shirt", "Shoes"]
+            });
+          } else {
+            reject("Order ID nahi mili");
+          }
+        }, 2000);
+      });
+    }
+
+    function checkOrder() {
+      const orderId = document.getElementById("orderId").value;
+      const result = document.getElementById("result");
+      result.textContent = "Intezaar karein...";
+
+      orderKiMaloomat(orderId)
+        .then(data => {
+          result.innerHTML = `
+            ✅ Order ID: <b>${data.orderId}</b><br>
+            📦 Status: <b>${data.status}</b><br>
+            📋 Items: ${data.items.join(", ")}
+          `;
+        })
+        .catch(error => {
+          result.textContent = "❌ Error: " + error;
+        });
+    }
+  </script>
+</body>
+</html>
