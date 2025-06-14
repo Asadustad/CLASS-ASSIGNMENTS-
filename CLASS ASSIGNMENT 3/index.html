@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #000;
+        }
+        .abstration, .inheritance, .ploymorphsim, .encapsulation {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 60%;
+            background: #f5d6bd;
+            
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            color: rgb(13, 81, 83);
+            font-size: 50px;
+
+        }
+        li{
+            font-size: 22px;
+            color: rgb(7, 7, 7);
+
+        }
+        /* h6{
+            font-size: 30px;
+            color: #cec5c5;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="abstration">
+            <h1>ABSTRACTION</h1>
+            <ul>
+                <li>Abstraction ka matlab hai sirf essential (zaroori) features ko show karna aur unnecessary details ko chhupa dena.
+                     Iska maksad code ko simple aur user-friendly banana hota hai.</li>
+                    </ul>
+                    <ul>
+                        <!-- <h6>Example</h6> -->
+                    <li>
+                        Jese ek car drive karte waqt hume sirf steering, gear aur brake ka use karna hota hai — 
+                        hume engine ke internal mechanism ka pata nahi hota.</li>
+                        </ul>
+        </div>
+        <div class="inheritance">
+            <h1>INHERITANCE</h1>
+            <ul>
+                <li>Inheritance ka matlab hai ek class (child/subclass) doosri class (parent/superclass)
+                     ke properties aur methods ko inherit kar sakti hai. Isse code reuse hota hai.</li>
+                     <!-- <h6>Example</h6> -->
+                    </ul>
+                    <ul>
+                        
+                        <li>Agar ek "Animal" class hai aur "Dog" class us se inherit karti hai, 
+                            to Dog class mein Animal ke properties/methods automatically aa jate hain.</li>
+            </ul>
+        </div>
+        <div class="ploymorphsim">
+            <h1>POLYMORPHISM</h1>
+            <ul>
+                <li>Polymorphism ka matlab hai "one name, many forms" — yaani ek function ya method different ways mein kaam kar sakta hai.
+                     Ye do tareeqon se hota hai:</li>
+                <li>Compile-time (Method Overloading)</li>
+                <li>Run-time (Method Overriding)</li>
+                <!-- <h6>Example</h6> -->
+            </ul>
+            <ul>
+                
+                <li>Ek method speak() jo "Dog" ke liye Bark kare aur "Cat" ke liye Meow.</li>
+            </ul>
+        </div>
+        <div class="encapsulation">
+            <h1>ENCAPSULATION</h1>
+            <ul>
+                <li>Encapsulation ka matlab hai ke data aur functions ko ek unit mein band kar dena — yaani class ke andar. 
+                    Ye kisi bhi object ke internal details ko hide karta hai aur sirf required information ko access karne ki ijaazat deta hai.</li>
+                </ul>
+                <ul>
+                    
+                    <!-- <h6>Example</h6> -->
+                <li>Class ke andar private variables rakhna aur unko access karne ke liye getter/setter methods banana.</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
